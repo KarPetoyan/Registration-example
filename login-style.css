@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-family: 'Pacifico', cursive;
+}
+
+a{
+    color: black;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(134, 134, 134);
+}
+
+.reg_animation{
+    width: 810px;
+    height: 610px;
+    border-radius: 50px;
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg_animation_div{
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    border-radius: 50px;
+    animation: reg 3s linear infinite;
+}
+
+@keyframes reg{
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(350deg);
+    }
+}
+
+.reg_animation1{
+    width: 40%;
+    height: 40%;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.reg_animation2{
+    width: 40%;
+    height: 40%;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.reg_div{
+    width: 800px;
+    height: 600px;
+    border-radius: 50px;
+    display: flex;
+    background-image: url(img/yellow.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+    box-shadow:  0 0 120px rgba(0,255,0,0.2),
+    0 0 50px rgba(0,255,0,0.4),
+    0 0 60px rgba(0,255,0,0.6),
+    0 0 70px rgba(0,255,0,0.8),
+    0 0 80px rgba(0,255,0,0.1);
+}
+
+.log_in{
+    width: 50%;
+    height: 100%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.log_in > h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    border: 0;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    background-color: transparent;
+    outline: none;
+    font-family: 'Patua One', cursive;
+}
+
+button{
+    width: 120px;
+    height: 38px;
+    font-size: 18px;
+    background-color: white;
+    border: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+    font-family: 'Patua One', cursive;
+}
+
+button:active{
+    font-size: 15px;
+}
+
+.sign_up_h2{
+    position: absolute;
+    right: 70px;
+    top: 70px;
+}
+
+.eror{
+    color: red;
+}
